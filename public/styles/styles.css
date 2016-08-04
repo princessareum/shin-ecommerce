@@ -1,11 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900);
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
+
 
 header {
 	width:100%;
@@ -190,6 +192,17 @@ header {
   right: 30px;
 }
 
+.home-boots h3 {
+  position: absolute;
+  top: 330px;
+  right: 26px;
+  color: #fff;
+  font-size: 90px;
+  opacity: 0.3;
+  font-style: italic;
+  font-weight: 900;
+}
+
 .home-boots button {
   width: 250px;
   padding: 10px;
@@ -207,6 +220,7 @@ header {
   top: 35px;
   right: 10px;
   color: #fff;
+  text-shadow: 2px 2px #000;
 }
 
 .home-sneakers button {
@@ -221,7 +235,45 @@ header {
   right: 10px;
 }
 
+footer {
+  width: 100%;
+  background: #420D2D;
+  padding: 20px 0;
+}
 
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.fa-envelope-o:before, .fa-phone-square:before,
+.fa-twitter-square:before, .fa-facebook-official:before,
+.fa-instagram:before {
+  flex: 1;
+  color: #fff;
+  font-size: 35px;
+}
+
+.info {
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+}
+
+
+@media (min-width: 360px){
+  .home-boots h3 {
+    top: 350px;
+    right: 32px;
+    font-size: 100px
+  }
+  .home-boots button {
+    top: 485px;
+    right: 55px;
+  }
+}
 
 @media (min-width: 375px){
 
@@ -233,6 +285,12 @@ header {
     right: 55px;
   }
 
+  .home-boots h3 {
+    top: 360px;
+    right: 30px;
+    font-size: 105px;
+  }
+
   .home-boots button {
     top: 500px;
     right: 62px;
@@ -242,3 +300,19 @@ header {
 
 }
 /*end of media query for 375px*/
+
+@media (min-width: 414px) {
+
+  .home-boots h3 {
+    top: 380px;
+    right: 35px;
+    font-size: 115px;
+  }
+
+  .home-boots button {
+    top: 530px;
+    right: 83px;
+  }
+
+}
+/*end of media query for 414px*/
