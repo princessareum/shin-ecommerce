@@ -1,5 +1,107 @@
-.test p {
-  color: red;
-  text-align: center;
-  font-size: 100px;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	width:100%;
+	background:#C8EDF5;
+	height:50px;
+	line-height:50px;
+}
+
+.hamburger {
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:1;
+}
+.cross {
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:10px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:1;
+}
+.menu {
+  z-index:1;
+  font-weight:bold;
+  font-size:0.8em;
+  width:100%;
+  background:#b5e8f2;
+  position:absolute;
+  text-align:center;}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+  color: #fff;
+}
+
+.menu li {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  padding:10px 0 10px 0;
+  border-bottom:#fff 1px solid;
+}
+
+.menu li:hover {
+  display: block;
+  background:#a4c6d6;
+  padding:15px 0 15px 0;
+  border-bottom:#fff 1px solid;
+}
+
+.menu ul li a {
+  text-decoration:none;
+  margin: 0px; color:#fff;}
+
+
+.menu ul li a:hover {
+  color: #fff;
+  text-decoration:none;
+}
+
+.menu a {
+  text-decoration:none;
+  color:#fff;
+}
+
+.menu a:hover {
+  text-decoration:none;
+  color:#fff;
+}
+
+.glyphicon-home {
+  color:white;
+  font-size:1.5em;
+  margin-top:5px;
+  margin:0 auto;
 }
