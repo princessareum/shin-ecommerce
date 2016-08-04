@@ -161,20 +161,26 @@ header {
   position: relative;
 }
 
-.home-pumps {
+.home-pumps, .home-boots {
   width: 100%;
   margin: auto;
 }
 
-.home-pumps img {
+.home-pumps img, .home-boots img, .home-sneakers {
   width: 100%;
   margin: 8px 0;
   position: relative;
 }
 
+.home-pumps h3 {
+  position: absolute;
+  top: 190px;
+  right: 30px;
+}
+
 .home-pumps button {
   width: 100px;
-  padding: 10px 10px;
+  padding: 10px;
   border: none;
   text-decoration: none;
   background: #420D2D;
@@ -184,13 +190,55 @@ header {
   right: 30px;
 }
 
-/*
-.home-pumps-button {
-  width: 100px;
-  padding: 8px 10px;
+.home-boots button {
+  width: 250px;
+  padding: 10px;
   border: none;
   text-decoration: none;
-  background: red;
+  background: #420D2D;
+  color: #fff;
   position: absolute;
-  right: 0;
-}*/
+  top: 450px;
+  right: 35px;
+}
+
+.home-sneakers h3 {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  color: #fff;
+}
+
+.home-sneakers button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  text-decoration: none;
+  background: #420D2D;
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  right: 10px;
+}
+
+
+
+@media (min-width: 375px){
+
+  .home-pumps h3 {
+    right: 50px;
+  }
+
+  .home-pumps button {
+    right: 55px;
+  }
+
+  .home-boots button {
+    top: 500px;
+    right: 62px;
+  }
+
+
+
+}
+/*end of media query for 375px*/
