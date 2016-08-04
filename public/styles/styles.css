@@ -1,19 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-li {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 header {
 	width:100%;
 	background:#C8EDF5;
-	height:50px;
+	height:40px;
 	line-height:50px;
 }
 
@@ -21,12 +18,12 @@ header {
   background:none;
   position:absolute;
   top:0;
-  right:0;
-  line-height:45px;
-  padding:0px 15px 0px 15px;
+  left:0;
+  line-height:40px;
+  padding:0px 8px 0px 8px;
   color:#fff;
   border:0;
-  font-size:1.4em;
+  font-size: 30px;
   font-weight:bold;
   cursor:pointer;
   outline:none;
@@ -36,17 +33,31 @@ header {
   background:none;
   position:absolute;
   top:0px;
-  right:0;
-  padding:10px 15px 0px 15px;
+  left:0;
+  padding:0px 8px 0px 8px;
   color:#fff;
   border:0;
-  font-size:3em;
-  line-height:65px;
+  font-size: 65px;
+  line-height: 60px;
   font-weight:bold;
   cursor:pointer;
   outline:none;
   z-index:1;
 }
+
+.cart-icon {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 0px 15px 0px 15px;
+  color: #fff;
+}
+
+.fa-shopping-cart:before {
+  font-size: 25px;
+}
+
 .menu {
   z-index:1;
   font-weight:bold;
@@ -65,17 +76,17 @@ header {
 }
 
 .menu li {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   display: block;
-  padding:10px 0 10px 0;
+  padding: 8px 0 8px 0;
   border-bottom:#fff 1px solid;
 }
 
 .menu li:hover {
   display: block;
   background:#a4c6d6;
-  padding:15px 0 15px 0;
+  padding: 12px 0 12px 0;
   border-bottom:#fff 1px solid;
 }
 
@@ -97,11 +108,4 @@ header {
 .menu a:hover {
   text-decoration:none;
   color:#fff;
-}
-
-.glyphicon-home {
-  color:white;
-  font-size:1.5em;
-  margin-top:5px;
-  margin:0 auto;
 }
