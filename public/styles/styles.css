@@ -9,7 +9,7 @@
 
 header {
 	width:100%;
-	background:#C8EDF5;
+	background:#420D2D;
 	height:40px;
 	line-height:50px;
 }
@@ -63,7 +63,7 @@ header {
   font-weight:bold;
   font-size:0.8em;
   width:100%;
-  background:#b5e8f2;
+  background:#330821;
   position:absolute;
   text-align:center;}
 
@@ -85,7 +85,7 @@ header {
 
 .menu li:hover {
   display: block;
-  background:#a4c6d6;
+  background:#601442;
   padding: 12px 0 12px 0;
   border-bottom:#fff 1px solid;
 }
@@ -109,3 +109,88 @@ header {
   text-decoration:none;
   color:#fff;
 }
+
+.search {
+  /*width: 80%;*/
+  margin: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.search input {
+  flex: 1;
+  padding: 8px 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.search button {
+  width: 50px;
+  background: #d3d3d3;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.home-title {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 20px 20px;
+  background: linear-gradient(to bottom right, #420D2D, #BF4A8C);
+}
+
+.home-title h2 {
+  color: white;
+  font-weight: 900;
+}
+
+.home-products {
+  width: 90%;
+  margin: auto;
+}
+
+.home-products img {
+  width: 100%;
+  margin: 8px 0;
+  position: relative;
+}
+
+.home-pumps {
+  width: 100%;
+  margin: auto;
+}
+
+.home-pumps img {
+  width: 100%;
+  margin: 8px 0;
+  position: relative;
+}
+
+.home-pumps button {
+  width: 100px;
+  padding: 10px 10px;
+  border: none;
+  text-decoration: none;
+  background: #420D2D;
+  color: #fff;
+  position: absolute;
+  top: 250px;
+  right: 30px;
+}
+
+/*
+.home-pumps-button {
+  width: 100px;
+  padding: 8px 10px;
+  border: none;
+  text-decoration: none;
+  background: red;
+  position: absolute;
+  right: 0;
+}*/
