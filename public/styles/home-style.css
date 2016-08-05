@@ -113,7 +113,6 @@ header {
 }
 
 .search {
-  /*width: 80%;*/
   margin: 10px 15px;
   display: flex;
   flex-direction: row;
@@ -196,6 +195,10 @@ header {
   right: 30px;
 }
 
+.home-pumps2 {
+  display: none;
+}
+
 .home-boots h3 {
   position: absolute;
   top: 330px;
@@ -219,6 +222,14 @@ header {
   right: 35px;
 }
 
+.home-boots2 {
+  display: none;
+}
+
+.home-flats2 {
+  display: none;
+}
+
 .home-sneakers h3 {
   position: absolute;
   top: 35px;
@@ -237,6 +248,10 @@ header {
   position: absolute;
   top: 80px;
   right: 10px;
+}
+
+.home-sneakers2 {
+  display: none;
 }
 
 footer {
@@ -267,6 +282,13 @@ footer {
 }
 
 
+
+
+/*media queries*/
+
+
+
+
 @media (min-width: 360px){
   .home-boots h3 {
     top: 350px;
@@ -278,6 +300,7 @@ footer {
     right: 55px;
   }
 }
+/*end of media query for 360px -- Galaxy S5*/
 
 @media (min-width: 375px){
 
@@ -303,7 +326,22 @@ footer {
 
 
 }
-/*end of media query for 375px*/
+/*end of media query for 375px -- iPhone 6*/
+
+@media (min-width: 411px) {
+  .home-boots h3 {
+    top: 370px;
+    right: 40px;
+    font-size: 111px;
+  }
+
+  .home-boots button {
+    top: 525px;
+    right: 80px;
+  }
+
+}/*end of media query for 411px -- Nexus 5S*/
+
 
 @media (min-width: 414px) {
 
@@ -319,4 +357,49 @@ footer {
   }
 
 }
-/*end of media query for 414px*/
+/*end of media query for 414px -- iPhone 6 Plus*/
+
+@media (min-width: 435px) {
+  .home-pumps h3 {
+    top: 200px;
+    right: 50px;
+  }
+
+  .home-pumps button {
+    top: 265px;
+    right: 60px;
+  }
+
+  .home-boots h3 {
+    top: 400px;
+    right: 48px
+  }
+
+  .home-boots button {
+    top: 545px;
+    right: 90px;
+  }
+}/*end of media query for 435px Nexus 6P*/
+
+
+@media (min-width: 436px) {
+  .home-body {
+    width: 80%;
+    margin: auto;
+  }
+
+  .home-pumps, .home-boots, .home-sneakers, .home-flats {
+    display: none;
+  }
+
+  .home-pumps2, .home-boots2, .home-flats2, .home-sneakers2 {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .home-pumps2 img, .home-boots2 img, .home-flats2 img, .home-sneakers2 img {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+}/*end of media query for 768px -- iPad*/

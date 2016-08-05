@@ -33,12 +33,6 @@ app.delete('/api/product/:id', productCtrl.DeleteProduct);
 
 
 
-
-
-
-
-
-
 var mongoURI = config.MONGO_URI;
 var port = config.PORT;
 
