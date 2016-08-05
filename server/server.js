@@ -3,7 +3,7 @@ var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var config = require("./server_config")
 
-
+var productCtrl = require("./controllers/productCtrl");
 
 
 
@@ -14,7 +14,11 @@ app.use(bodyParser.json());
 
 
 
-
+//Product end point
+app.post('/api/product', productCtrl.CreateProduct);
+app.get('/api/product', productCtrl.GetProduct);
+app.put('/api/product/:id', productCtrl.UpdateProduct);
+app.delete('/api/product/:id', productCtrl.DeleteProduct);
 
 
 
