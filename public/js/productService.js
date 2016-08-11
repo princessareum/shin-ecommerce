@@ -9,10 +9,10 @@ angular.module('app').service('productService', function($http){
     })
   };
 
-  this.getProduct = function(productId){
+  this.getProduct = function(){
     return $http({
       method: "GET",
-      url: "/api/product?_id=" + productId
+      url: "/api/product"
     }).then(function(response){
       return response.data;
     })

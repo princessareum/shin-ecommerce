@@ -11,7 +11,8 @@ angular.module('app', ['ui.router'])
 
     .state('flats', {
       url: '/flats',
-      templateUrl: './routes/flats.html'
+      templateUrl: './routes/flats.html',
+      controller: 'flatsController'
     })
 
     .state('heels', {

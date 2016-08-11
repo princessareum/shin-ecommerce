@@ -1,2 +1,13 @@
 <menu-directive></menu-directive>
-flats
+
+<div ng-repeat="flat in flats">
+  <img src="{{flat.image}}" alt="" />
+  <br>
+  {{flat.name}}
+  <br>
+  ${{flat.retailPrice}}
+  <br>
+  ${{flat.discountedPrice}}
+  <br>
+  {{flat.seller}}
+</div>

@@ -1,5 +1,15 @@
 <menu-directive></menu-directive>
-<div>
-heels
+
+<div ng-repeat="heel in heels">
+  <img src="{{heel.image}}" alt="" />
+  <br>
+  {{heel.name}}
+  <br>
+  ${{heel.retailPrice}}
+  <br>
+  ${{heel.discountedPrice}}
+  <br>
+  {{heel.seller}}
+
 
 </div>

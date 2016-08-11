@@ -14,13 +14,23 @@ module.exports = {
   },
 
   GetProduct: function(req, res, next){
-    Product.find(req.query, function(err, response){
+    Product.find(function(err, response){
       if(err){
         res.status(500).json(err);
       } else {
         res.status(200).json(response);
       }
     })
+  },
+
+  GetProductById: function(req, res, next) {
+    Product.findById(req.params.id, function(err, response) {
+      if(err){
+        res.status(500).json(err);
+      } else {
+        res.json(response);
+      }
+    });
   },
 
   UpdateProduct: function(req, res, next){

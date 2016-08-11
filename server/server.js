@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 //Product end point
 app.post('/api/product', productCtrl.CreateProduct);
 app.get('/api/product', productCtrl.GetProduct);
+app.get('/api/product/:id', productCtrl.GetProductById);
 app.put('/api/product/:id', productCtrl.UpdateProduct);
 app.delete('/api/product/:id', productCtrl.DeleteProduct);
 

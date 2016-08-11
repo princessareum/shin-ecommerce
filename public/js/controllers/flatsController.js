@@ -1,19 +1,16 @@
-angular.module('app').controller('heelsController', function($scope, productService, $stateParams){
-
-
+angular.module('app').controller('flatsController', function($scope, productService){
 
   $scope.getProduct = function(){
     productService.getProduct().then(function(response){
       $scope.products = response;
-      $scope.heels = [];
+      $scope.flats = [];
       for(var i = 0; i < $scope.products.length; i++){
-        if($scope.products[i].category === "heels"){
-          $scope.heels.push($scope.products[i]);
+        if($scope.products[i].category === "flats"){
+          $scope.flats.push($scope.products[i]);
         }
       }
     })
   };
   $scope.getProduct();
 
-
-});
+})
