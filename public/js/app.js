@@ -16,7 +16,8 @@ angular.module('app', ['ui.router'])
 
     .state('heels', {
       url: '/heels',
-      templateUrl: './routes/heels.html'
+      templateUrl: './routes/heels.html',
+      controller: 'heelsController'
     })
 
     .state('boots', {
