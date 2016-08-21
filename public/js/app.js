@@ -46,6 +46,11 @@ angular.module('app', ['ui.router'])
       templateUrl: './routes/cart.html'
     })
 
+    .state('admin', {
+      url: '/admin',
+      templateUrl: './routes/admin.html',
+      controller: 'adminController'
+    })
 
 
 
